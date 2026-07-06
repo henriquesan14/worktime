@@ -1,0 +1,28 @@
+mat-card {
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+
+.item {
+  display:flex;
+  justify-content:space-between;
+  padding:15px 0;
+  font-size:18px;
+}
+
+
+.exit {
+  margin-top:20px;
+  text-align:center;
+  padding:20px;
+  border-radius:15px;
+  background:#f5f5f5;
+}
+
+
+.exit h2 {
+  margin:10px;
+  font-size:40px;
+}

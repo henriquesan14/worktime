@@ -1,12 +1,13 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { TimeInput } from './components/time-input/time-input';
+import { SummaryCard } from './components/summary-card/summary-card';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [TimeInput, SummaryCard],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('worktime');
+  
 }

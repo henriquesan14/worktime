@@ -1,0 +1,66 @@
+<mat-card>
+
+<mat-card-header>
+
+<mat-card-title>
+Resumo do dia
+</mat-card-title>
+
+</mat-card-header>
+
+
+<mat-card-content>
+
+
+<div class="item">
+
+<span>
+⏱ Trabalhado
+</span>
+
+<strong>
+{{service.formatMinutes(service.getWorkedMinutes())}}
+</strong>
+
+</div>
+
+
+<div class="item">
+
+<span>
+⌛ Falta
+</span>
+
+<strong>
+{{service.formatMinutes(service.getRemainingMinutes())}}
+</strong>
+
+</div>
+
+<div class="item">
+
+<span>
+🔥 Horas extras
+</span>
+
+<strong>
+{{service.formatOvertime(service.getOvertimeMinutes())}}
+</strong>
+
+</div>
+
+
+<div class="exit">
+
+🚪 Saída prevista
+
+<h2>
+{{service.getExpectedExit() ?? '--:--'}}
+</h2>
+
+</div>
+
+
+</mat-card-content>
+
+</mat-card>

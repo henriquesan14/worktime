@@ -24,7 +24,6 @@ export class TimeInput {
 
 
   change(event:Event){
-
     const input = event.target as HTMLInputElement;
 
     this.service.update(

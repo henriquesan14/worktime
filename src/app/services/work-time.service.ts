@@ -98,6 +98,19 @@ export class WorkTimeService {
     return this.getWorkedMinutes() - this.targetMinutes;
   }
 
+  clear() {
+    const emptyDay = {
+      entry: null,
+      lunchOut: null,
+      lunchIn: null,
+      exit: null
+    };
+
+    this.workDay.set(emptyDay);
+
+    localStorage.removeItem('workDay');
+  }
+
 
   private diff(start:string, end:string){
 
